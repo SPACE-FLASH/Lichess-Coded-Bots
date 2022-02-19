@@ -28,7 +28,6 @@ engine:                      # Engine settings.
     EvalFile: nn-938525872610.nnue
     Skill Level: 20
     UCI_Chess960: true
-    nodestime: 40
 #    go_commands:             # Additional options to pass to the UCI go command.
 #     movetime: 1000000         # Integer. Search exactly movetime milliseconds.
 # xboard_options:            # Arbitrary XBoard options passed to the engine.
