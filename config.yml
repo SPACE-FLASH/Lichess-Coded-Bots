@@ -6,7 +6,7 @@ engine:                      # Engine settings.
   name: "chess-engine"    # Binary name of the engine to use.
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent's time.
- polyglot:
+  polyglot:
     enabled: true           # Activate polyglot book.
     book:
       standard:              # List of book file paths for variant standard.
