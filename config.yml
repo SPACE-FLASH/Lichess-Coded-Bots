@@ -22,26 +22,23 @@ engine:                      # Engine settings.
 #   cpuct: 3.1
   uci_options:               # arbitrary UCI options passed to the engine
  
-option name Contempt type spin : 24
-option name Analysis Contempt type combo : Both var Off var White var Black var Both
-option name Threads type spin : 256
-option name Hash type spin : 32768
-option name Ponder type check : false
-option name MultiPV type spin : 1
-option name Skill Level type spin : 20
-option name Move Overhead type spin : 300
-option name nodestime type spin : 0
-option name UCI_Chess960 type check : true
-option name UCI_AnalyseMode type check : false
-option name UCI_LimitStrength type check : false
-option name UCI_Elo type spin : 2850
-option name UCI_ShowWDL type check : false
-option name SyzygyPath type string : <empty>
-option name SyzygyProbeDepth type spin : 100
-option name Syzygy50MoveRule type check : true
-option name SyzygyProbeLimit type spin : 7
-option name Use NNUE type check : true
-option name EvalFile: nn-938525872610.nnue
+Contempt: 24
+Threads: 256
+Hash: 32768
+Ponder: false
+Skill Level: 20
+Move Overhead: 300
+UCI_Chess960: true
+UCI_AnalyseMode: false
+UCI_LimitStrength: false
+UCI_Elo: 2850
+UCI_ShowWDL: false
+SyzygyPath: <empty>
+SyzygyProbeDepth : 100
+Syzygy50MoveRule: true
+SyzygyProbeLimit: 7
+Use NNUE: true
+EvalFile: nn-938525872610.nnue
 #    go_commands:             # additional options to pass to the UCI go command
 #      nodes: 5000               # Search so many nodes only.
 #      depth: 20               # Search depth ply only.
