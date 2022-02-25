@@ -29,7 +29,7 @@ option name Hash type spin : 32768
 option name Ponder type check : false
 option name MultiPV type spin : 1
 option name Skill Level type spin : 20
-option name Move Overhead type spin : 1000
+option name Move Overhead type spin : 300
 option name nodestime type spin : 0
 option name UCI_Chess960 type check : true
 option name UCI_AnalyseMode type check : false
@@ -41,6 +41,7 @@ option name SyzygyProbeDepth type spin : 100
 option name Syzygy50MoveRule type check : true
 option name SyzygyProbeLimit type spin : 7
 option name Use NNUE type check : true
+option name EvalFile: nn-938525872610.nnue
 #    go_commands:             # additional options to pass to the UCI go command
 #      nodes: 5000               # Search so many nodes only.
 #      depth: 20               # Search depth ply only.
@@ -57,6 +58,7 @@ option name Use NNUE type check : true
 
 abort_time: 30               # time to abort a game in seconds when there is no activity
 fake_think_time: false       # artificially slow down the bot to pretend like it's thinking
+Move Overhead: 1500
 
 challenge:                   # incoming challenges
   concurrency: 1             # number of games to play simultaneously
