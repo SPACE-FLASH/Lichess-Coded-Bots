@@ -7,10 +7,11 @@ engine:                      # Engine settings.
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent's time.
   polyglot:
-    enabled: true           # Activate polyglot book.
+    enabled: true            # Activate polyglot book.
     book:
       standard:              # List of book file paths for variant standard.
         - Cerebellum3Merge.bin
+        - Goi5.1.bin
 #      atomic: # list of book file paths for variant atomic
 #      etc.
 #      use the same pattern for giveaway, crazyhouse, horde, kingofthehill, racingkings, 3check as well
@@ -20,11 +21,30 @@ engine:                      # Engine settings.
 # engine_options:           # any custom command line params to pass to the engine
 #   cpuct: 3.1
   uci_options:               # arbitrary UCI options passed to the engine
-    Move Overhead: 400       # Increase if your bot flags games too often.
-    Hash: 10                 # Max memory (in megabytes) the engine can allocate.
-    Threads: 1               # Max CPU threads the engine can use. 
-#    go_commands:             # Additional options to pass to the UCI go command.
-#     movetime: 1000000         # Integer. Search exactly movetime milliseconds.
+ 
+option name Contempt type spin : 24
+option name Analysis Contempt type combo : Both var Off var White var Black var Both
+option name Threads type spin : 256
+option name Hash type spin : 32768
+option name Ponder type check : false
+option name MultiPV type spin : 1
+option name Skill Level type spin : 20
+option name Move Overhead type spin : 400
+option name nodestime type spin : 0
+option name UCI_Chess960 type check : false
+option name UCI_AnalyseMode type check : false
+option name UCI_LimitStrength type check : false
+option name UCI_Elo type spin : 2850
+option name UCI_ShowWDL type check : false
+option name SyzygyPath type string : <empty>
+option name SyzygyProbeDepth type spin : 100
+option name Syzygy50MoveRule type check : true
+option name SyzygyProbeLimit type spin : 7
+option name Use NNUE type check : false
+#    go_commands:             # additional options to pass to the UCI go command
+#      nodes: 5000               # Search so many nodes only.
+#      depth: 20               # Search depth ply only.
+#      movetime: 1         # Integer. Search exactly movetime milliseconds.s.
 # xboard_options:            # Arbitrary XBoard options passed to the engine.
 #   cores: "4"
 #   memory: "2048"
