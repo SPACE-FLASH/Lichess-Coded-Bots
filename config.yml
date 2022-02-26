@@ -23,8 +23,8 @@ engine:                      # Engine settings.
     Move Overhead: 400       # Increase if your bot flags games too often.
     Use NNUE: true           # allow bot to use neural networks
     EvalFile: nn-938525872610.nnue
-    Threads: 7
-    Hash: 1100               
+    Threads: 1
+    Hash: 128               
     UCI_Chess960: true
     SyzygyPath: ./engines/Syzygy_tablebase
     SyzygyProbeDepth: 50
