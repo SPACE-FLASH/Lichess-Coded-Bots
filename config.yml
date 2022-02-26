@@ -10,8 +10,8 @@ engine:                      # Engine settings.
     enabled: true            # Activate polyglot book.
     book:
       standard:              # List of book file paths for variant standard.
+        - elo3300.bin
         - Cerebellum3Merge.bin
-        - Goi5.1.bin
 #      atomic: # list of book file paths for variant atomic
 #      etc.
 #      use the same pattern for giveaway, crazyhouse, horde, kingofthehill, racingkings, 3check as well
@@ -44,19 +44,16 @@ option name Use NNUE type check : false
 #    go_commands:             # additional options to pass to the UCI go command
 #      nodes: 5000               # Search so many nodes only.
 #      depth: 20               # Search depth ply only.
-#      movetime: 1         # Integer. Search exactly movetime milliseconds.s.
-# xboard_options:            # Arbitrary XBoard options passed to the engine.
-#   cores: "4"
-#   memory: "2048"
-#   egtpath:                 # Directory containing egtb (endgame tablabases), relative to this project. For 'xboard' engines.
+#      movetime: 1         # Integer. Search exactly movetime milliseconds.
+#  xboard_options:            # arbitrary xboard options passed to the engine
+#    cores: "4"
+#    memory: "4096"
+#    egtpath:                 # dir containing egtb, relative to this project
 #     gaviota: "Gaviota path"
 #     nalimov: "Nalimov Path"
 #     scorpio: "Scorpio Path"
 #     syzygy: "Syzygy Path"
-#   go_commands:             # Additional options to pass to the XBoard go command.
-#     depth: 5               # Search depth ply only.
-#     Do note that the go commands 'movetime' and 'nodes' are invalid and may cause bad time management for XBoard engines.
-  silence_stderr: false      # Some engines (yes you, Leela) are very noisy.
+#  silence_stderr: false      # some engines (yes you, leela) are very noisy
 
 abort_time: 20               # Time to abort a game in seconds when there is no activity.
 fake_think_time: false       # Artificially slow down the bot to pretend like it's thinking.
