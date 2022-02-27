@@ -3,7 +3,7 @@ url: "https://lichess.org/"  # Lichess base URL.
 
 engine:                      # Engine settings.
   dir: "./"                  # Directory containing engines, relative to this project.
-  name: "stockfish13m"    # Binary name of the engine to use.
+  name: "chess-engine"    # Binary name of the engine to use.
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent's time.
   polyglot:
@@ -24,6 +24,8 @@ engine:                      # Engine settings.
     Move Overhead: 300       # Increase if your bot flags games too often.
     Threads: 1               # Max CPU threads the engine can use.
     Hash: 64                 # Max memory (in megabytes) the engine can allocate.
+    Use NNUE: true           # allow bot to use neural networks
+    EvalFile: nn-938525872610.nnue
 #    go_commands:             # Additional options to pass to the UCI go command.
 #     movetime: 1000000         # Integer. Search exactly movetime milliseconds.
 # xboard_options:            # Arbitrary XBoard options passed to the engine.
