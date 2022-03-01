@@ -10,7 +10,7 @@ engine:                      # Engine settings.
     enabled: true            # Activate polyglot book.
     book:
       standard:              # List of book file paths for variant standard.
-        - cerebellum3Merge.bin
+        - Cerebellum3Merge.bin
 #      atomic: # list of book file paths for variant atomic
 #     etc.
 #     Use the same pattern for 'giveaway' (antichess), 'crazyhouse', 'horde', 'kingofthehill', 'racingkings' and '3check' as well.
