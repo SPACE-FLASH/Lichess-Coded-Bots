@@ -33,6 +33,7 @@ option name UCI_AnalyseMode type check : false
 option name UCI_LimitStrength type check : false
 option name UCI_Elo type spin : 2850
 option name UCI_ShowWDL type check : false
+option name nodestime type spin : 60
 option name SyzygyPath type string : <empty>
 option name SyzygyProbeDepth type spin : 100
 option name Syzygy50MoveRule type check : true
