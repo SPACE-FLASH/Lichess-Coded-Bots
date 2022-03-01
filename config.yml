@@ -1,16 +1,16 @@
-token: "lip_fBYibyoiskK58g5BXaGv"    # Lichess OAuth2 Token.
+token: "lip_qa5rqKMRKjXhc2hOEvAy"    # Lichess OAuth2 Token.
 url: "https://lichess.org/"  # Lichess base URL.
 
 engine:                      # Engine settings.
   dir: "./"                  # Directory containing engines, relative to this project.
-  name: "fsf"    # Binary name of the engine to use.
+  name: "chess-engine"    # Binary name of the engine to use.
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent's time.
   polyglot:
     enabled: true            # Activate polyglot book.
     book:
       standard:              # List of book file paths for variant standard.
-        - elo3300.bin
+        - cerebellum3Merge.bin
 #      atomic: # list of book file paths for variant atomic
 #     etc.
 #     Use the same pattern for 'giveaway' (antichess), 'crazyhouse', 'horde', 'kingofthehill', 'racingkings' and '3check' as well.
@@ -28,7 +28,7 @@ engine:                      # Engine settings.
     Skill Level: 20
     Use NNUE: true
     EvalFile: nn-938525872610.nnue
-    SyzygyPath: <empty>
+    SyzygyPath: https://github.com/codingforhelp/Lichess-Bot/tree/master/engines/Syzygy_tablebase
     SyzygyProbeDepth : 100
     Syzygy50MoveRule: true
     SyzygyProbeLimit : 7
@@ -52,7 +52,7 @@ engine:                      # Engine settings.
 abort_time: 20               # Time to abort a game in seconds when there is no activity.
 fake_think_time: false       # Artificially slow down the bot to pretend like it's thinking.
 rate_limiting_delay: 0       # Time (in ms) to delay after sending a move to prevent "Too Many Requests" errors.
-Move Overhead: 700           # Increase if your bot flags games too often.
+Move Overhead: 800           # Increase if your bot flags games too often.
 correspondence: 
     move_time: 60            # Time in seconds to search in correspondence games.
     checkin_period: 600      # How often to check for opponent moves in correspondence games after disconnecting.
