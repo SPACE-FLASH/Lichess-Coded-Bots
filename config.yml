@@ -54,7 +54,7 @@ option name Use NNUE type check : false
 
 abort_time: 30               # time to abort a game in seconds when there is no activity
 fake_think_time: false       # artificially slow down the bot to pretend like it's thinking
-Move Overhead: 3000
+Move Overhead: 300
 
 challenge:                   # incoming challenges
   concurrency: 1             # number of games to play simultaneously
