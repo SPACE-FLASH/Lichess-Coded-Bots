@@ -28,8 +28,6 @@ option name Threads type spin : 27
 option name Hash type spin : 512
 option name Ponder type check : false
 option name Skill Level type spin : 20
-option name Move Overhead type spin : 4500
-option name nodestime type spin : 0
 option name UCI_Chess960 type check : false
 option name UCI_AnalyseMode type check : false
 option name UCI_LimitStrength type check : false
@@ -56,6 +54,7 @@ option name Use NNUE type check : false
 
 abort_time: 30               # time to abort a game in seconds when there is no activity
 fake_think_time: false       # artificially slow down the bot to pretend like it's thinking
+Move Overhead: 3000
 
 challenge:                   # incoming challenges
   concurrency: 1             # number of games to play simultaneously
